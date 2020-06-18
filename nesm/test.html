@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>pant-vant-SwipeCell 滑动单元格</title>
+    <link rel="stylesheet" href="/nesm/res/style/example.css" />
+    <link rel="stylesheet" href="/nesm/res/js/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="/nesm/res/js/vant/lib/index.css">
+    <style>
+        .van-swipe-cell__right {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+    <div class="container" id="container">
+        <pre>
+            vant SwipeCell 滑动单元格 官网例子代码
+            <van-swipe-cell>
+                <template #left>
+                    <van-button square type="primary" text="选择" />
+                </template>
+                <van-cell :border="false" title="单元格" value="内容" />
+                <template #right>
+                    <van-button square type="danger" text="删除"/>
+                    <van-button square type="primary" text="收藏"/>
+                </template>
+            </van-swipe-cell>
+        </pre>
+        <van-swipe-cell>
+            <template #left>
+                <van-button square type="primary" text="选择" />
+            </template>
+            <van-cell :border="false" title="单元格" value="内容" />
+            <template #right>
+                <van-button square type="danger" text="删除" />
+                <van-button square type="primary" text="收藏" />
+            </template>
+        </van-swipe-cell>
+        <br />
+        <pre>
+            vant SwipeCell 滑动单元格 实际修改后实现的官网例子
+            <van-swipe-cell>
+                <template #left>
+                    <van-button square type="primary" text="选择" />
+                </template>
+                <template #right>
+                    <van-button square type="danger" text="删除"></van-button>
+                    <van-button square type="primary" text="收藏"></van-button>
+                </template>
+                <van-cell :border="false" title="单元格" value="内容" />
+            </van-swipe-cell>
+        </pre>
+        <van-swipe-cell>
+            <template #left>
+                <van-button square type="primary" text="选择" />
+            </template>
+            <template #right>
+                <van-button square type="danger" text="删除"></van-button>
+                <van-button square type="primary" text="收藏"></van-button>
+            </template>
+            <van-cell :border="false" title="单元格" value="内容" />
+        </van-swipe-cell>
+    </div>
+
+    <!-- <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script> -->
+    <script type="text/javascript" src="/nesm/res/js/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/nesm/res/js/msgtools.js"></script>
+
+    <script type="text/javascript" src="/nesm/res/js/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/nesm/res/js/vue-router/dist/vue-router.min.js"></script>
+    <script src="/nesm/res/js/element-ui/lib/index.js"></script>
+
+    <script type="text/javascript" src="/nesm/res/js/weui.min.js"></script>
+    <script src="/nesm/res/js/vant/lib/vant.min.js"></script>
+
+
+    <script type="text/javascript" src="/nesm/res/js/example.js"></script>
+
+    <script type="text/javascript" src="/nesm/res/js/app.js"></script>
+
+</body>
+
+</html>
